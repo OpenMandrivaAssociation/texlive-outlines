@@ -50,3 +50,11 @@ lists or presentation slides.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
++ Revision: 770234
+- texlive-outlines
+- texlive-outlines
+
