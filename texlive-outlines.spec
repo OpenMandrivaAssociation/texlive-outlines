@@ -1,18 +1,12 @@
-# revision 25192
-# category Package
-# catalog-ctan /macros/latex/contrib/outlines
-# catalog-date 2012-01-24 12:03:36 +0100
-# catalog-license noinfo
-# catalog-version 1.1
 Name:		texlive-outlines
-Version:	1.1
-Release:	11
+Version:	25192
+Release:	1
 Summary:	Produce "outline" lists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/outlines
 License:	NOINFO
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outlines.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outlines.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outlines.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outlines.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ cases where nested lists are used a lot, such as for to-do
 lists or presentation slides.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,18 +37,10 @@ lists or presentation slides.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 770234
-- texlive-outlines
-- texlive-outlines
-
