@@ -1,6 +1,6 @@
 Name:		texlive-outlines
 Version:	25192
-Release:	1
+Release:	2
 Summary:	Produce "outline" lists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/outlines
