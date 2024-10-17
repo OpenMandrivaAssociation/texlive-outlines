@@ -3,7 +3,7 @@ Version:	25192
 Release:	2
 Summary:	Produce "outline" lists
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/outlines
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/outlines
 License:	NOINFO
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outlines.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outlines.doc.r%{version}.tar.xz
